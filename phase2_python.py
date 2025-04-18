@@ -11,7 +11,7 @@ load_dotenv()
 
 # Database connection parameters
 psql_params = {
-    "DB_NAME": "project",
+    "DB_NAME": os.getenv("POSTGRES_PROJECT"),
     "DB_USER": os.getenv("POSTGRES_USER"),
     "DB_PASSWORD": os.getenv("POSTGRES_PASSWORD"),
     "DB_HOST": "localhost",
